@@ -1,0 +1,153 @@
+@import 'variables';
+
+header {
+	position: fixed;
+	width: 100%;
+	z-index: 100;
+	overflow: hidden;
+	font-family: $primary-font;
+
+	// imagen del logo
+	.logo {
+		width: 24px;
+		height: 24px;
+		float: left;
+		display: block;
+		padding: 16px 10px;
+	}
+	nav {
+		// ul
+		.menu {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			background-color: $secondary-color;
+			clear: both;
+			max-height: 0;
+			transition: max-height 0.3s ease-out;
+
+			li {
+				line-height: 28px;
+			}
+
+			a {
+				display: block;
+				text-decoration: none;
+				padding: 5%;
+				color: #ffffff;
+
+				// cuando se pasa por arriba con el mouse cambia de color y se tacha.
+				&:hover {
+					color: $tertiary-color;
+					text-decoration: line-through;
+				}
+
+				// cuando se clickea cambia de color y se tacha.
+				&:active {
+					color: rgba(6, 10, 36, 0.56%);
+					text-decoration: line-through;
+				}
+			}
+		}
+
+		// hamburguesa - label
+		.menu-icon {
+			padding-top: 25px;
+			padding-right: 25px;
+			position: relative;
+			float: right;
+			cursor: pointer;
+
+			// .nav-icon = span.
+			// linea del medio de la hamburguesa
+			.nav-icon {
+				background-color: $primary-color;
+				display: block;
+				width: 18px;
+				height: 2px;
+				position: relative;
+				transition: background 0.2s ease-out;
+
+				// agrega una linea antes al span .nav-icon para crear la hamburguesa
+				&:before {
+					background-color: $primary-color;
+					content: '';
+					display: block;
+					height: 100%;
+					width: 100%;
+					position: absolute;
+					top: 5px;
+					transition: all 0.2s ease-out;
+				}
+
+				// agrega una linea despues al span .nav-icon para crear la hamburguesa
+				&:after {
+					background-color: $primary-color;
+					content: '';
+					display: block;
+					height: 100%;
+					width: 100%;
+					position: absolute;
+					top: -5px;
+					transition: all 0.2s ease-out;
+				}
+			}
+		}
+
+		// desaparece el checkbox
+		.menu-btn {
+			display: none;
+		}
+
+		//! Para que funcione esto, es MUY importante que el el id del input y el for del label tengan el mismo nombre
+		.menu-btn:checked ~ .menu {
+			max-height: 100%;
+		}
+
+		// todo esto es para hacer aparecer la X cuando se clickea en la versión mobile
+		//esto hace transparente el span del medio
+		.menu-btn:checked ~ .menu-icon .nav-icon {
+			background: transparent;
+		}
+
+		.menu-btn:checked ~ .menu-icon .nav-icon:before {
+			transform: rotate(-45deg);
+			top: 0;
+		}
+
+		.menu-btn:checked ~ .menu-icon .nav-icon:after {
+			transform: rotate(45deg);
+			top: 0;
+		}
+	}
+
+	@media screen and (min-width: 768px) {
+		nav {
+			.logo {
+				width: 36px;
+				height: 36px;
+			}
+
+			.menu {
+				clear: none;
+				float: right;
+				max-height: none;
+
+				li {
+					float: left;
+
+					a {
+						font-size: 16px;
+						color: $primary-color;
+						padding: 22px;
+						background-color: #fff;
+					}
+				}
+			}
+
+			.menu-icon {
+				display: none;
+			}
+		}
+	}
+}
