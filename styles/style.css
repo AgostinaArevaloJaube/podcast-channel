@@ -171,7 +171,16 @@ main .hero p {
   color: #060A24;
 }
 
-main .hero button {
+main .episodes {
+  background-color: #0000EC;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 400;
+  color: white;
+  font-size: 36px;
+  line-height: 64px;
+}
+
+main button {
   border: none;
   display: block;
   font-family: "IBM Plex Mono", monospace;
@@ -184,7 +193,7 @@ main .hero button {
   background-color: #00F3BB;
 }
 
-main .hero button:hover {
+main button:hover {
   background: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
   color: white;
 }

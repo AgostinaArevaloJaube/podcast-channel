@@ -25,24 +25,36 @@ main {
 			line-height: 22px;
 			color: $primary-color;
 		}
+	}
 
-		button {
-			border: none;
-			display: block;
-			font-family: $primary-font;
-			font-size: 18px;
-			line-height: 24px;
-			color: $primary-color;
-			// padding: 4% 0;
-			height: 8vh;
-			width: 93vw;
-			margin-top: 12%;
-			background-color: $tertiary-color;
+	.episodes {
+		background-color: 'IBM Plex Sans', sans-serif;
 
-			&:hover {
-				background: $button-gradient;
-				color: white;
-			}
+		h2 {
+			font-family: $secondary-font;
+			font-weight: 400;
+			color: white;
+			font-size: 36px;
+			line-height: 64px;
+		}
+	}
+
+	button {
+		border: none;
+		display: block;
+		font-family: $primary-font;
+		font-size: 18px;
+		line-height: 24px;
+		color: $primary-color;
+		// padding: 4% 0;
+		height: 8vh;
+		width: 93vw;
+		margin-top: 12%;
+		background-color: $tertiary-color;
+
+		&:hover {
+			background: $button-gradient;
+			color: white;
 		}
 	}
 
@@ -51,7 +63,7 @@ main {
 
 @media screen and (min-width: 768px) {
 	main {
-		.hero{
+		.hero {
 			padding-top: 15%;
 			padding-left: 10%;
 
