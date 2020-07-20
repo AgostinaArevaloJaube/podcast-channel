@@ -27,15 +27,32 @@ main {
 		}
 	}
 
+	// SECTION EPISODES
 	.episodes {
-		background-color: 'IBM Plex Sans', sans-serif;
+		position: relative;
+		height: 1200px;
+		background-color: $secondary-color;
+		clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
 
 		h2 {
-			font-family: $secondary-font;
-			font-weight: 400;
-			color: white;
+			padding-top: 20%;
+			padding-left: 3vw;
+			padding-bottom: 5%;
+			font-family: 'IBM Plex Sans', sans-serif;
 			font-size: 36px;
-			line-height: 64px;
+			color: white;
+			letter-spacing: 0;
+			line-height: 42px;
+			font-weight: 400;
+		}
+
+		.iframe-container {
+			display: grid;
+			grid-column: 1fr 1fr;
+
+			.iframe {
+				border-style: none;
+			}
 		}
 	}
 
@@ -78,12 +95,11 @@ main {
 				font-size: 16px;
 				line-height: 24px;
 			}
-
-			button {
-				margin-top: 5%;
-				max-width: 20vw;
-				max-height: 20vh;
-			}
+		}
+		button {
+			margin-top: 5%;
+			max-width: 20vw;
+			max-height: 20vh;
 		}
 	}
 }
