@@ -5,7 +5,6 @@ main {
 		padding-left: 3vw;
 
 		h1 {
-			// display: inline;
 			margin: 0;
 			font-family: $secondary-font;
 			font-weight: 400;
@@ -26,44 +25,13 @@ main {
 			color: $primary-color;
 		}
 	}
-
-	// SECTION EPISODES
-	.episodes {
-		position: relative;
-		height: 1200px;
-		background-color: $secondary-color;
-		clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
-
-		h2 {
-			padding-top: 20%;
-			padding-left: 3vw;
-			padding-bottom: 5%;
-			font-family: 'IBM Plex Sans', sans-serif;
-			font-size: 36px;
-			color: white;
-			letter-spacing: 0;
-			line-height: 42px;
-			font-weight: 400;
-		}
-
-		.iframe-container {
-			display: grid;
-			grid-column: 1fr 1fr;
-
-			.iframe {
-				border-style: none;
-			}
-		}
-	}
-
 	button {
 		border: none;
 		display: block;
 		font-family: $primary-font;
-		font-size: 18px;
-		line-height: 24px;
+		font-size: 1.25em;
+		line-height: 1.5em;
 		color: $primary-color;
-		// padding: 4% 0;
 		height: 8vh;
 		width: 93vw;
 		margin-top: 12%;
@@ -75,7 +43,6 @@ main {
 		}
 	}
 
-	// MEDIA QUERIES
 }
 
 @media screen and (min-width: 768px) {
@@ -85,15 +52,15 @@ main {
 			padding-left: 10%;
 
 			h1 {
-				font-size: 64px;
-				line-height: 64px;
+				font-size: 4em;
+				line-height: 1em;
 			}
 
 			p {
 				margin-top: 3%;
-				max-width: 30vw;
-				font-size: 16px;
-				line-height: 24px;
+				max-width: 50vw;
+				font-size: 1em;
+				line-height: 1.5em;
 			}
 		}
 		button {

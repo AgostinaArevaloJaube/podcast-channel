@@ -1,0 +1,51 @@
+main {
+	// DE DONDE VENIMOS
+	.about-us {
+		display: flex;
+		flex-flow: column wrap;
+		// top: 230px;
+
+		img {
+			width: 100vw;
+		}
+		.about-us__text-container {
+			h2,
+			p {
+				margin-top: 25px;
+				padding-left: 3vw;
+				color: $primary-color;
+			}
+
+			h2 {
+				font-family: $secondary-font;
+				font-size: 2.25em;
+				font-weight: 400;
+				max-width: 60vw;
+			}
+
+			p {
+				font-family: $primary-font;
+				max-width: 90vw;
+			}
+		}
+	}
+}
+
+@media screen and(min-width: 768px) {
+	main {
+		.about-us {
+			justify-content: center;
+			align-self: baseline;
+			flex-flow: row wrap;
+
+			img {
+				width: 30vw;
+			}
+
+			.about-us__text-container {
+				width: 40vw;
+				align-self: center;
+			}
+		}
+	}
+}
