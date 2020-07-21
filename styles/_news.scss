@@ -3,7 +3,6 @@ main {
 	.news {
 		font-family: $secondary-font;
 		color: white;
-		font-weight: 400;
 		background: $section-gradient;
 		clip-path: polygon(100% 0%, 0% 40%, 0% 100%, 100% 100%);
 		height: 400px;
@@ -16,6 +15,7 @@ main {
 				font-size: 2.25em;
 				line-height: 42px;
 				text-align: center;
+				font-weight: 400;
 			}
 
 			.btn {

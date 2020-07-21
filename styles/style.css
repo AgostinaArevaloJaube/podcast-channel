@@ -436,7 +436,6 @@ main .topics .icons-container .icon h4 {
 main .news {
   font-family: "IBM Plex Sans", sans-serif;
   color: white;
-  font-weight: 400;
   background: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
   -webkit-clip-path: polygon(100% 0%, 0% 40%, 0% 100%, 100% 100%);
           clip-path: polygon(100% 0%, 0% 40%, 0% 100%, 100% 100%);
@@ -452,6 +451,7 @@ main .news .news__container h2 {
   font-size: 2.25em;
   line-height: 42px;
   text-align: center;
+  font-weight: 400;
 }
 
 main .news .news__container .btn {
@@ -513,7 +513,7 @@ footer .social-media-container .fab {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    width: 100vw;
+    max-width: 100vw;
   }
   footer p {
     padding-left: 3%;
