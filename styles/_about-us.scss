@@ -1,17 +1,19 @@
 main {
 	// DE DONDE VENIMOS
 	.about-us {
-		display: flex;
-		flex-flow: column wrap;
-		// top: 230px;
+		z-index: 100;
+		position: relative;
+		top: -100px;
 
 		img {
 			width: 100vw;
+			z-index: 100;
+
 		}
 		.about-us__text-container {
+			z-index: 100;
 			h2,
 			p {
-				margin-top: 25px;
 				padding-left: 3vw;
 				color: $primary-color;
 			}
@@ -34,8 +36,8 @@ main {
 @media screen and(min-width: 768px) {
 	main {
 		.about-us {
+			display: flex;
 			justify-content: center;
-			align-self: baseline;
 			flex-flow: row wrap;
 
 			img {
@@ -43,8 +45,13 @@ main {
 			}
 
 			.about-us__text-container {
-				width: 40vw;
+				width: 60vw;
 				align-self: center;
+				padding-left: 15px;
+
+				p{
+					font-size: 16px;
+				}
 			}
 		}
 	}

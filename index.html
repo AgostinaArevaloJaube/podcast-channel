@@ -38,7 +38,7 @@
 				<ul class="menu">
 					<li><a href="#episodes">EPISODIOS</a></li>
 					<li><a href="#about-us">NOSOTROS</a></li>
-					<li><a href="#inverviews">ENTREVISTAS</a></li>
+					<li><a href="#interviews">ENTREVISTAS</a></li>
 					<li><a href="#topics">TÓPICOS</a></li>
 				</ul>
 				<!-- TODO: poner los id en los section -->
@@ -48,12 +48,15 @@
 		<main>
 			<!-- INTRO -->
 			<section class="hero">
-				<h1>Hello <s>world</s> pale blue dot<span>.</span></h1>
+				<h1>
+					<span class="h1__block">Hello <s>world</s></span> pale blue
+					dot<span class="blue-dot">.</span>
+				</h1>
 				<p>
 					Un podcast que explora el mundo de la programación. Nuevos
 					episodios, todos los jueves cada 15 días.
 				</p>
-				<button>CONOCÉ MÁS</button>
+				<a class="btn" href="#about-us">CONOCÉ MÁS</a>
 			</section>
 
 			<!-- EPISODIOS -->
@@ -109,10 +112,10 @@
 			</section>
 
 			<!-- ENTREVISTADAS/OS ESTELARES -->
-			<section class="inverviews" id="inverviews">
+			<section class="interviews" id="interviews">
 				<h2>Invitadas/os estelares</h2>
 
-				<div class="container">
+				<div class="imgs__container">
 					<img
 						src="/assets/grace-hopper.png"
 						alt="Foto de Grace Hopper"
@@ -140,31 +143,33 @@
 				</div>
 			</section>
 
-			<!-- <section class="topics" id="topics">
+			<section class="topics" id="topics">
 				<h2>Algunos de nuestros temas</h2>
 
 				<div class="icons-container">
-					<div class="trabajo-remoto">
+					<div class="icon">
 						<img src="/assets/icon1.svg" alt="" />
 						<h4>Trabajo remoto</h4>
 					</div>
-					<div class="pensando-la-programación">
+					<div class="icon">
 						<img src="/assets/icon2.svg" alt="" />
 						<h4>Pensando la programación</h4>
 					</div>
-					<div class="bases-del-codigo">
+					<div class="icon">
 						<img src="/assets/icon3.svg" alt="" />
 						<h4>Bases del codigo</h4>
 					</div>
-					<div class="seguridad-informatica">
+					<div class="icon">
 						<img src="/assets/icon4.svg" alt="" />
 						<h4>Bases del codigo</h4>
 					</div>
 				</div>
-			</section> -->
+			</section>
 			<section class="news">
-				<h2>¿Querés las útimas novedades?</h2>
-				<button>Escuchá los episodios</button>
+				<div class="news__container">
+					<h2>¿Querés las útimas novedades?</h2>
+					<a class="btn" href="#episodes">ESCUCHÁ LOS EPISODIOS</a>
+				</div>
 			</section>
 		</main>
 
