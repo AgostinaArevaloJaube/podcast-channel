@@ -1,33 +1,32 @@
 main {
-	// DE DONDE VENIMOS
 	.about-us {
-		z-index: 100;
 		position: relative;
 		top: -100px;
+		z-index: 100;
 
-		img {
+		.about-us__img {
 			width: 100vw;
 			z-index: 100;
-
 		}
 		.about-us__text-container {
 			z-index: 100;
-			h2,
-			p {
+
+			.abot-us__title,
+			.abot-us__text {
 				padding-left: 3vw;
 				color: $primary-color;
 			}
 
-			h2 {
+			.abot-us__title {
+				max-width: 60vw;
 				font-family: $secondary-font;
 				font-size: 2.25em;
 				font-weight: 400;
-				max-width: 60vw;
 			}
 
-			p {
-				font-family: $primary-font;
+			.abot-us__text {
 				max-width: 90vw;
+				font-family: $primary-font;
 			}
 		}
 	}
@@ -37,19 +36,20 @@ main {
 	main {
 		.about-us {
 			display: flex;
-			justify-content: center;
 			flex-flow: row wrap;
+			justify-content: center;
 
-			img {
+			.about-us__img {
 				width: 30vw;
 			}
 
 			.about-us__text-container {
-				width: 60vw;
-				align-self: center;
+				width: 50vw;
+				margin-top: 2rem;
 				padding-left: 15px;
+				align-self: center;
 
-				p{
+				.abot-us__text {
 					font-size: 16px;
 				}
 			}

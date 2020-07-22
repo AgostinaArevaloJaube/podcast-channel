@@ -18,86 +18,100 @@
 	<body>
 		<header>
 			<!-- logo -->
-
-			<a href="index.html">
+			<a class="logo" href="index.html">
 				<img
-					class="logo"
+					class="logo__img"
 					src="/assets/logo.svg"
 					alt="Logo Podcast Channel"
 				/>
 			</a>
-
-			<nav>
+			<nav class="nav-menu">
 				<!-- check-box -->
-				<input class="menu-btn" type="checkbox" id="menu-btn" />
+				<input
+					class="nav-menu__checkbox"
+					type="checkbox"
+					id="nav-menu__checkbox"
+				/>
 				<!-- Hamburguesa -->
-				<label class="menu-icon" for="menu-btn"
-					><span class="nav-icon"></span>
+				<label class="nav-menu__icon" for="nav-menu__checkbox"
+					><span class="nav-menu__icon-lines"></span>
 				</label>
 
-				<ul class="menu">
-					<li><a href="#episodes">EPISODIOS</a></li>
-					<li><a href="#about-us">NOSOTROS</a></li>
-					<li><a href="#interviews">ENTREVISTAS</a></li>
-					<li><a href="#topics">TÓPICOS</a></li>
+				<ul class="nav-menu__list">
+					<li class="nav-menu__item">
+						<a class="nav-menu__link" href="#episodes">EPISODIOS</a>
+					</li>
+					<li class="nav-menu__item">
+						<a class="nav-menu__link" href="#about-us">NOSOTROS</a>
+					</li>
+					<li class="nav-menu__item">
+						<a class="nav-menu__link" href="#interviews"
+							>ENTREVISTAS</a
+						>
+					</li>
+					<li class="nav-menu__item">
+						<a class="nav-menu__link" href="#topics">TÓPICOS</a>
+					</li>
 				</ul>
 				<!-- TODO: poner los id en los section -->
 			</nav>
 		</header>
 
 		<main>
-			<!-- INTRO -->
+			<!-- hero -->
 			<section class="hero">
-				<h1>
-					<span class="h1__block">Hello <s>world</s></span> pale blue
-					dot<span class="blue-dot">.</span>
+				<h1 class="hero__title">
+					<span class="hero__title-block">Hello <s>world</s></span>
+					pale blue dot<span class="hero__title-dot">.</span>
 				</h1>
-				<p>
+				<p class="hero__text">
 					Un podcast que explora el mundo de la programación. Nuevos
 					episodios, todos los jueves cada 15 días.
 				</p>
-				<a class="btn" href="#about-us">CONOCÉ MÁS</a>
+				<a class="button" role="button" href="#about-us">
+					<span class="button-text">CONOCÉ MÁS</span></a
+				>
 			</section>
 
-			<!-- EPISODIOS -->
+			<!-- episodes -->
 			<section class="episodes" id="episodes">
-				<h2>Episodios</h2>
+				<h2 class="episodes__title">Episodios</h2>
 
-				<div class="iframe-container">
+				<div class="episodes__container">
 					<iframe
-						class="spotify"
+						class="episodes__iframe"
 						src="https://open.spotify.com/embed-podcast/show/3wMRZb2skAtJSp47GmaOOt"
-						height="232"
 						allow="encrypted-media"
 					></iframe>
 					<iframe
-						class="spotify"
+						class="episodes__iframe"
 						src="https://open.spotify.com/embed-podcast/show/74pQ14mr4act8ot0MfJOXA"
-						height="232"
 						allow="encrypted-media"
 					></iframe>
 					<iframe
-						class="spotify"
+						class="episodes__iframe"
 						src="https://open.spotify.com/embed-podcast/show/3rfUxNzg7vm2XBMZB2M3JX"
-						height="232"
 						allow="encrypted-media"
 					></iframe>
 					<iframe
-						class="spotify"
+						class="episodes__iframe"
 						src="https://open.spotify.com/embed-podcast/show/3gJPfBeztHPTaXlNnyq9tz"
-						height="232"
 						allow="encrypted-media"
 					></iframe>
 				</div>
 			</section>
 
-			<!-- DE DONDE VENIMOS -->
+			<!-- about-us -->
 			<section class="about-us" id="about-us">
-				<img src="/assets/phone.png" alt="Imagen de un telefono" />
+				<img
+					class="about-us__img"
+					src="/assets/phone.png"
+					alt="Imagen de un telefono"
+				/>
 
 				<div class="about-us__text-container">
-					<h2>De dónde venimos</h2>
-					<p>
+					<h2 class="abot-us__title">De dónde venimos</h2>
+					<p class="abot-us__text">
 						Our posturing, our imagined self-importance, the
 						delusion that we have some privileged position in the
 						Universe, are challenged by this point of pale light.
@@ -111,77 +125,136 @@
 				</div>
 			</section>
 
-			<!-- ENTREVISTADAS/OS ESTELARES -->
+			<!-- interviews -->
 			<section class="interviews" id="interviews">
-				<h2>Invitadas/os estelares</h2>
+				<h2 class="interviews__title">Invitadas/os estelares</h2>
 
-				<div class="imgs__container">
+				<div class="interviews__imgs-container">
 					<img
+						class="interviews__img"
 						src="/assets/grace-hopper.png"
 						alt="Foto de Grace Hopper"
 					/>
 					<img
+						class="interviews__img"
 						src="/assets/katie-bouman.png"
 						alt="Foto de Katie Bouman"
 					/>
 					<img
+						class="interviews__img"
 						src="/assets/margaret-hamilton.png"
 						alt="Foto de Margaret Hamilton"
 					/>
 					<img
+						class="interviews__img"
 						src="/assets/an-e.r.a-univac-1103.png"
 						alt="Foto de ERA Univac 1103"
 					/>
 					<img
+						class="interviews__img"
 						src="/assets/computer-operators-with-an-eniac.png"
 						alt="Operadores con una Eniac"
 					/>
 					<img
+						class="interviews__img"
 						src="/assets/susan-kare.png"
 						alt="Foto de Susan Kare"
 					/>
 				</div>
 			</section>
 
+			<!-- topics -->
 			<section class="topics" id="topics">
-				<h2>Algunos de nuestros temas</h2>
+				<h2 class="topics__title">Algunos de nuestros temas</h2>
 
-				<div class="icons-container">
-					<div class="icon">
+				<div class="topics__icons-container">
+					<div class="topics__icon">
 						<img src="/assets/icon1.svg" alt="" />
-						<h4>Trabajo remoto</h4>
+						<h4 class="topics__icon-title">Trabajo remoto</h4>
 					</div>
-					<div class="icon">
+					<div class="topics__icon">
 						<img src="/assets/icon2.svg" alt="" />
-						<h4>Pensando la programación</h4>
+						<h4 class="topics__icon-title">
+							<span class="icon-title-block"> Pensando la</span
+							>programación
+						</h4>
 					</div>
-					<div class="icon">
+					<div class="topics__icon">
 						<img src="/assets/icon3.svg" alt="" />
-						<h4>Bases del codigo</h4>
+						<h4 class="topics__icon-title">Bases del código</h4>
 					</div>
-					<div class="icon">
+					<div class="topics__icon">
 						<img src="/assets/icon4.svg" alt="" />
-						<h4>Bases del codigo</h4>
+						<h4 class="topics__icon-title">
+							<span class="icon-title-block">Seguridad</span>informática
+						</h4>
 					</div>
 				</div>
 			</section>
+
+			<!-- news -->
 			<section class="news">
 				<div class="news__container">
-					<h2>¿Querés las útimas novedades?</h2>
-					<a class="btn" href="#episodes">ESCUCHÁ LOS EPISODIOS</a>
+					<h2 class="news__title">¿Querés las útimas novedades?</h2>
+					<a
+						class="button button--footer"
+						role="button"
+						href="#episodes"
+						>ESCUCHÁ LOS EPISODIOS</a
+					>
 				</div>
 			</section>
 		</main>
 
-		<footer>
-			<p>© 2019- Hello blue pale dot</p>
-
-			<ul class="social-media-container">
-				<li><i class="fab fa-spotify"></i></li>
-				<li><i class="fab fa-instagram"></i></li>
-				<li><i class="fab fa-twitter"></i></li>
-				<li><i class="fab fa-facebook"></i></li>
-				<li><i class="fab fa-telegram"></i></li>
+		<!-- footer -->
+		<footer class="footer__container">
+			<p class="footer__text">© 2019- Hello blue pale dot</p>
+			<ul class="footer__social-media-container">
+				<li>
+					<a
+						class="footer__links"
+						href="https://open.spotify.com/show/3wMRZb2skAtJSp47GmaOOt"
+						target="_blank"
+					>
+						<i class="fab fa-spotify"></i>
+					</a>
+				</li>
+				<li>
+					<a
+						class="footer__links"
+						href="https://www.instagram.com/"
+						target="_blank"
+					>
+						<i class="fab fa-instagram"></i>
+					</a>
+				</li>
+				<li>
+					<a
+						class="footer__links"
+						href="https://twitter.com/"
+						target="_blank"
+					>
+						<i class="fab fa-twitter"></i
+					></a>
+				</li>
+				<li>
+					<a
+						class="footer__links"
+						href="https://web.telegram.org/"
+						target="_blank"
+					>
+						<i class="fab fa-telegram"></i
+					></a>
+				</li>
+				<li>
+					<a
+						class="footer__links"
+						href="https://www.facebook.com/"
+						target="_blank"
+					>
+						<i class="fab fa-facebook"></i>
+					</a>
+				</li>
 			</ul>
 		</footer>
 	</body>

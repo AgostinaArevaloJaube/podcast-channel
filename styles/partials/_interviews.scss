@@ -1,0 +1,40 @@
+.interviews {
+	width: 100vw;
+	// padding-left: 3vw;
+	.interviews__title {
+		max-width: 60vw;
+		padding-left: 3vw;
+		font-family: $secondary-font;
+		font-size: 2.25em;
+		font-weight: 400;
+		color: $primary-color;
+	}
+
+	.interviews__imgs-container {
+		width: 100vw;
+		max-width: 100vw;
+		display: grid;
+
+		.interviews__img {
+			min-width: 100%;
+			max-width: 100vw;
+			display: block;
+		}
+	}
+}
+
+@media screen and(min-width: 768px) {
+	.interviews {
+		.interviews__title {
+			padding-left: 10.5vw;
+		}
+		.interviews__imgs-container {
+			display: grid;
+			grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+
+			.interviews__img {
+				max-width: 100%;
+			}
+		}
+	}
+}

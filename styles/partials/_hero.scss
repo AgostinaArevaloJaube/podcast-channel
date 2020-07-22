@@ -4,20 +4,20 @@ main {
 		padding-top: 10%;
 		padding-left: 3vw;
 
-		h1 {
+		.hero__title {
 			margin: 0;
 			font-family: $secondary-font;
 			font-weight: 400;
 			font-size: 2.25em;
 			line-height: 42px;
 			color: $primary-color;
-			// width: 80%;
 
-			.h1__block {
+			.hero__title-block {
 				display: block;
 			}
 		}
-		p {
+
+		.hero__text {
 			font-family: $primary-font;
 			font-weight: 400;
 			font-size: 14px;
@@ -26,20 +26,20 @@ main {
 		}
 	}
 
-	// anchor
-	.btn {
-		border: none;
+	// button for hero & footer
+	.button {
+		width: 93vw;
+		margin-top: 12%;
+		padding: 10px 0;
 		display: block;
+		border: none;
+		background-color: $tertiary-color;
 		font-family: $primary-font;
 		font-size: 1.25em;
 		line-height: 1.5em;
-		color: $primary-color;
-		padding: 10px 0;
-		width: 93vw;
-		margin-top: 12%;
-		background-color: $tertiary-color;
 		text-decoration: none;
 		text-align: center;
+		color: $primary-color;
 
 		&:hover {
 			background: $button-gradient;
@@ -51,33 +51,31 @@ main {
 @media screen and (min-width: 768px) {
 	main {
 		.hero {
-			padding-top: 15%;
-			padding-left: 10%;
+			padding-left: 10.5vw;
 
-			h1 {
+			.hero__title {
 				font-size: 4em;
 				line-height: 1em;
 
-				.h1__block {
+				.hero__title-block {
 					display: inline;
 				}
 
-				.blue-dot {
+				.hero__title-dot {
 					color: $secondary-color;
 				}
 			}
 
-			p {
+			.hero__text {
+				max-width: 60vw;
 				margin-top: 3%;
-				max-width: 50vw;
 				font-size: 1em;
 				line-height: 1.5em;
 			}
 		}
-		.btn {
-			margin-top: 5%;
+		.button {
 			max-width: 30vw;
-			// max-height: 20vh;
+			margin-top: 5%;
 		}
 	}
 }

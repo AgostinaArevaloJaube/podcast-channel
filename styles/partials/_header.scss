@@ -1,55 +1,53 @@
 header {
 	width: 100%;
-	z-index: 100;
-	overflow: hidden;
-	font-family: $primary-font;
 	background-color: white;
+	font-family: $primary-font;
+	overflow: hidden;
+	z-index: 100;
 
-	// imagen del logo
-	.logo {
+	.logo__img {
 		width: 24px;
 		height: 24px;
 		float: left;
 		display: block;
 		padding: 16px 10px;
 	}
-	nav {
-		// ul
-		.menu {
-			margin: 0;
-			padding: 0;
-			list-style: none;
-			background-color: $secondary-color;
-			clear: both;
+
+	.nav-menu {
+		.nav-menu__list {
 			max-height: 0;
 			transition: max-height 0.3s ease-out;
+			clear: both;
+			margin: 0;
+			padding: 0;
+			background-color: $secondary-color;
+			list-style: none;
 
-			li {
+			.nav-menu__item {
 				line-height: 28px;
-			}
 
-			a {
-				display: block;
-				text-decoration: none;
-				padding: 5%;
-				color: #ffffff;
+				.nav-menu__link {
+					display: block;
+					padding: 5%;
+					text-decoration: none;
+					color: #ffffff;
 
-				// cuando se pasa por arriba con el mouse cambia de color y se tacha.
-				&:hover {
-					color: $tertiary-color;
-					text-decoration: line-through;
-				}
-
-				// cuando se clickea cambia de color y se tacha.
-				&:active {
-					color: rgba(6, 10, 36, 0.56%);
-					text-decoration: line-through;
+					// cuando se pasa por arriba con el mouse cambia de color y se tacha.
+					&:hover {
+						text-decoration: line-through;
+						color: $tertiary-color;
+					}
+					// cuando se clickea cambia de color y se tacha.
+					&:active {
+						text-decoration: line-through;
+						color: rgba(6, 10, 36, 0.56%);
+					}
 				}
 			}
 		}
 
 		// hamburguesa - label
-		.menu-icon {
+		.nav-menu__icon {
 			padding-top: 25px;
 			padding-right: 25px;
 			position: relative;
@@ -58,21 +56,21 @@ header {
 
 			// .nav-icon = span.
 			// linea del medio de la hamburguesa
-			.nav-icon {
-				background-color: $primary-color;
-				display: block;
+			.nav-menu__icon-lines {
 				width: 18px;
 				height: 2px;
 				position: relative;
+				display: block;
+				background-color: $primary-color;
 				transition: background 0.2s ease-out;
 
 				// agrega una linea antes al span .nav-icon para crear la hamburguesa
 				&:before {
 					background-color: $primary-color;
 					content: '';
-					display: block;
-					height: 100%;
 					width: 100%;
+					height: 100%;
+					display: block;
 					position: absolute;
 					top: 5px;
 					transition: all 0.2s ease-out;
@@ -82,9 +80,9 @@ header {
 				&:after {
 					background-color: $primary-color;
 					content: '';
-					display: block;
-					height: 100%;
 					width: 100%;
+					height: 100%;
+					display: block;
 					position: absolute;
 					top: -5px;
 					transition: all 0.2s ease-out;
@@ -93,57 +91,61 @@ header {
 		}
 
 		// desaparece el checkbox
-		.menu-btn {
+		.nav-menu__checkbox {
 			display: none;
 		}
 
 		//! Para que funcione esto, es MUY importante que el el id del input y el for del label tengan el mismo nombre
-		.menu-btn:checked ~ .menu {
+		.nav-menu__checkbox:checked ~ .nav-menu__list {
 			max-height: 100%;
 		}
 
 		// todo esto es para hacer aparecer la X cuando se clickea en la versión mobile
 		//esto hace transparente el span del medio
-		.menu-btn:checked ~ .menu-icon .nav-icon {
+		.nav-menu__checkbox:checked ~ .nav-menu__icon .nav-menu__icon-lines {
 			background: transparent;
 		}
 
-		.menu-btn:checked ~ .menu-icon .nav-icon:before {
+		.nav-menu__checkbox:checked
+			~ .nav-menu__icon
+			.nav-menu__icon-lines:before {
 			transform: rotate(-45deg);
 			top: 0;
 		}
 
-		.menu-btn:checked ~ .menu-icon .nav-icon:after {
+		.nav-menu__checkbox:checked
+			~ .nav-menu__icon
+			.nav-menu__icon-lines:after {
 			transform: rotate(45deg);
 			top: 0;
 		}
 	}
 
 	@media screen and (min-width: 768px) {
-		nav {
+		.nav-menu {
 			.logo {
 				width: 36px;
 				height: 36px;
 			}
 
-			.menu {
+			.nav-menu__list {
+				max-height: none;
 				clear: none;
 				float: right;
-				max-height: none;
 
-				li {
+				.nav-menu__item {
 					float: left;
 
-					a {
-						font-size: 16px;
-						color: $primary-color;
+					.nav-menu__link {
 						padding: 22px;
 						background-color: #fff;
+						font-size: 16px;
+						color: $primary-color;
 					}
 				}
 			}
 
-			.menu-icon {
+			.nav-menu__icon {
 				display: none;
 			}
 		}

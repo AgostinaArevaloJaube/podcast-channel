@@ -1,0 +1,42 @@
+main {
+	.news {
+		height: 22rem;
+		width: 100vw;
+		background: $section-gradient;
+		clip-path: polygon(100% 0%, 0% 10%, 0% 100%, 100% 100%);
+		font-family: $secondary-font;
+		color: white;
+
+		.news__container {
+			margin: 0 auto;
+			position: relative;
+			top: 5rem;
+
+			.news__title {
+				width: 80vw;
+				margin: 0 auto;
+				font-size: 2.25em;
+				font-weight: 300;
+				line-height: 42px;
+				text-align: center;
+			}
+
+			.button--footer {
+				margin: 2.5rem auto;
+			}
+		}
+	}
+}
+
+@media screen and(min-width: 768px) {
+	main {
+		.news {
+			height: 32rem;
+			clip-path: polygon(100% 0%, 0% 25%, 0% 100%, 100% 100%);
+
+			.news__container {
+				top: 15rem;
+			}
+		}
+	}
+}
