@@ -270,17 +270,21 @@ main .episodes .episodes__container .episodes__iframe {
     line-height: 0.1em;
   }
   main .episodes .episodes__container {
-    width: 90%;
-    height: 65%;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-rows: 1fr 1fr;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template: 1fr 1fr / 1fr 1fr;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   main .episodes .episodes__container .episodes__iframe {
-    width: 90%;
-    height: 100%;
+    width: 40%;
+    height: 50%;
+    margin: 1.5em;
   }
 }
 
@@ -415,7 +419,7 @@ main .topics .topics__icons-container {
 }
 
 main .topics .topics__icons-container .topics__icon {
-  padding: 0 6px;
+  padding: 5% 2%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
