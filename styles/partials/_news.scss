@@ -1,7 +1,7 @@
 main {
 	.news {
 		height: 22rem;
-		width: 100vw;
+		// width: 100vw;
 		background: $section-gradient;
 		clip-path: polygon(100% 0%, 0% 10%, 0% 100%, 100% 100%);
 		font-family: $secondary-font;
@@ -31,6 +31,7 @@ main {
 @media screen and(min-width: 768px) {
 	main {
 		.news {
+			max-width: 100vw;
 			height: 32rem;
 			clip-path: polygon(100% 0%, 0% 25%, 0% 100%, 100% 100%);
 
