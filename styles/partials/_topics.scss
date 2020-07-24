@@ -3,8 +3,9 @@ main {
 		font-family: $secondary-font;
 
 		.topics__title {
-			max-width: 80vw;
+			max-width: 85vw;
 			padding-left: 3vw;
+			margin: 10px 0;
 			font-size: 2.25em;
 			font-weight: 400;
 		}

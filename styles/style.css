@@ -355,6 +355,7 @@ main .about-us .about-us__text-container .abot-us__text {
 
 .interviews .interviews__title {
   max-width: 60vw;
+  margin: 10px 0;
   padding-left: 3vw;
   font-family: "IBM Plex Sans", sans-serif;
   font-size: 2.25em;
@@ -396,8 +397,9 @@ main .topics {
 }
 
 main .topics .topics__title {
-  max-width: 80vw;
+  max-width: 85vw;
   padding-left: 3vw;
+  margin: 10px 0;
   font-size: 2.25em;
   font-weight: 400;
 }
