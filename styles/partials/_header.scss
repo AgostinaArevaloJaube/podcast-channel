@@ -3,7 +3,6 @@ header {
 	background-color: white;
 	font-family: $primary-font;
 	overflow: hidden;
-	z-index: 100;
 
 	.logo {
 		.logo__img {
@@ -101,8 +100,8 @@ header {
 			max-height: 100%;
 		}
 
-		// todo esto es para hacer aparecer la X cuando se clickea en la versión mobile
-		//esto hace transparente el span del medio
+		// Aparecer la X cuando se clickea en la versión mobile
+		// esto hace transparente el span del medio
 		.nav-menu__checkbox:checked ~ .nav-menu__icon .nav-menu__icon-lines {
 			background: transparent;
 		}
