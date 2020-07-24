@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+		<meta name="description" content="Trabajo práctico de Acámica, cierre de bloque I (html y css) de Agostina Arevalo Jaube">
 		<!-- TODO falta meta description -->
 		<!-- css -->
 		<link rel="stylesheet" href="/styles/style.css" />
@@ -60,7 +60,6 @@
 						<a class="nav-menu__link" href="#topics">TÓPICOS</a>
 					</li>
 				</ul>
-				<!-- TODO: poner los id en los section -->
 			</nav>
 		</header>
 
@@ -81,7 +80,6 @@
 			</section>
 
 			<!-- episodes -->
-			<!-- ! mejorar la accesibilidad -->
 			<section class="episodes" id="episodes">
 				<h2 class="episodes__title">Episodios</h2>
 
@@ -90,21 +88,25 @@
 						class="episodes__iframe"
 						src="https://open.spotify.com/embed-podcast/show/3wMRZb2skAtJSp47GmaOOt"
 						allow="encrypted-media"
+						title="Podcast de Chicas en Tec"
 					></iframe>
 					<iframe
 						class="episodes__iframe"
 						src="https://open.spotify.com/embed-podcast/show/74pQ14mr4act8ot0MfJOXA"
 						allow="encrypted-media"
+						title="Podcast de No lo testeamos"
 					></iframe>
 					<iframe
 						class="episodes__iframe"
 						src="https://open.spotify.com/embed-podcast/show/3rfUxNzg7vm2XBMZB2M3JX"
 						allow="encrypted-media"
+						title="Podcast de Mates and Tech"
 					></iframe>
 					<iframe
 						class="episodes__iframe"
 						src="https://open.spotify.com/embed-podcast/show/3gJPfBeztHPTaXlNnyq9tz"
 						allow="encrypted-media"
+						title="Podcast de Quiero Programar"
 					></iframe>
 				</div>
 			</section>
@@ -214,10 +216,8 @@
 				</div>
 			</section>
 		</main>
-
+		
 		<!-- footer -->
-		<!-- ! mejorar la accesibilidad -->
-		<!-- ! mejorar href="norefer" y alt -->
 		<footer class="footer__container">
 			<p class="footer__text">© 2019- Hello blue pale dot</p>
 			<ul class="footer__social-media-container">
@@ -226,6 +226,8 @@
 						class="footer__links"
 						href="https://open.spotify.com/show/3wMRZb2skAtJSp47GmaOOt"
 						target="_blank"
+						rel="noreferrer"
+						aria-label="Ir a Spotify"
 					>
 						<i class="fab fa-spotify"></i>
 					</a>
@@ -235,6 +237,8 @@
 						class="footer__links"
 						href="https://www.instagram.com/"
 						target="_blank"
+						rel="noreferrer"
+						aria-label="Ir a Instagram"
 					>
 						<i class="fab fa-instagram"></i>
 					</a>
@@ -244,6 +248,8 @@
 						class="footer__links"
 						href="https://twitter.com/"
 						target="_blank"
+						rel="noreferrer"
+						aria-label="Ir a Twitter"
 					>
 						<i class="fab fa-twitter"></i
 					></a>
@@ -253,6 +259,8 @@
 						class="footer__links"
 						href="https://www.facebook.com/"
 						target="_blank"
+						rel="noreferrer"
+						aria-label="Ir a Facebook"
 					>
 						<i class="fab fa-facebook"></i>
 					</a>
@@ -262,6 +270,8 @@
 						class="footer__links"
 						href="https://web.telegram.org/"
 						target="_blank"
+						rel="noreferrer"
+						aria-label="Ir a Telegram"
 					>
 						<i class="fab fa-telegram"></i
 					></a>
